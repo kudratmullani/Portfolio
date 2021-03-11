@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+
+    *{
+    
+    box-sizing: border-box;
+}
+    #about-me h1{
+        color: blue;
+        text-align: center;
+        font-size: 40px;
+    }
+    .row{
+        width: 100%;
+        padding: 0 15%;
+    }
+    .info-detail{
+    font-size: 1rem;
+}
+.about-data{
+    padding-left: 0%;
+}
+.data{
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.data span:first-child{
+    font-weight: 600;
+    color: #000;
+    width: 130px;
+}
+.data span{
+    color: black;
+    width: calc(100% - 130px);
+} 
+    
+    /* Create two equal columns that floats next to each other */
+    .column {
+      float: left;
+      width: 50%;
+      padding: 10px;
+      /* height: 300px;  */
+    }
+    .column img{
+        width: 100%;
+        object-fit: fill;
+
+    }
+    .column p{
+        padding: 20px;
+    }
+    
+    /* Clear floats after the columns */
+    .row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 1050px) {
+    .row{
+        padding: 0 0;
+    }
+  .column {
+    width: 100%;
+  }
+  .column img{
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  }
+  .col{
+    width: 70%;
+    margin: 0 15%;
+    
+  }
+}
+@media screen and (max-width: 875px){
+    .col{
+    width: 90%;
+    margin: 0 5%;    
+  }
+}
+    </style>
+    </head>
+    <body>
+        <!-- Navigation bar -->
+        <section id="about-me">            
+            <h1>About me</h1>
+            <div class="row">
+                <div class="column">
+                    <img src="image/model.jpg" alt="">
+                </div>
+                <div class="column col">
+                    <p>I would like to work in a professional environment together with dynamic colleagues which helps me to
+                        promote my abitlities and strenghthens most.</p>
+                    <div class="info-detail">
+                        <ul class="about-data">
+                            <li class="data">
+                                <span>Name:</span> 
+                                <span>Kudrat Mullani</span>
+                            </li>
+                            <li class="data">
+                                <span>Date of birth:</span> 
+                                <span>November 07, 1998</span>
+                            </li>
+                            <li class="data">
+                                <span>Address:</span> 
+                                <span>A/P Rangoli, Kolhapur</span>
+                            </li>
+                            <li class="data">
+                                <span>Zip code:</span> 
+                                <span>416143</span>
+                            </li>
+                            <li class="data">
+                                <span>Email:</span> 
+                                <span>kudratmullani09@gmail.com</span>
+                            </li>
+                            <li class="data">
+                                <span>Phone: </span> 
+                                <span>+91-9284018492</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+                
+    <div class="edu">
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatibus suscipit quae quod earum, debitis, sint provident nulla excepturi ipsa ea obcaecati asperiores perferendis iure! Inventore sequi mollitia dignissimos illum nulla provident quae facilis hic error quis possimus aliquam, labore dolorem nisi nemo similique veritatis excepturi aliquid vero consequuntur atque tenetur deleniti! Neque sapiente eveniet iusto cumque sed, alias placeat laborum? Similique possimus placeat debitis obcaecati amet porro ut magnam, odio voluptas impedit dolore! Amet eligendi iure necessitatibus quo temporibus et reprehenderit, veniam deserunt laudantium vero exercitationem ut ipsam, totam, corrupti pariatur cum nostrum officia error incidunt nemo possimus ducimus neque?</p>
+    </div>
+    </body>
+</html>
